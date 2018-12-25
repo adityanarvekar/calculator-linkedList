@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatorbig.FXMLDocumentController">
+    <children>
+        <Button fx:id="computeButton" layoutX="40.0" layoutY="238.0" onAction="#handleComputeAction" prefHeight="43.0" prefWidth="104.0" text="Compute" />
+      <Button fx:id="quitButon" layoutX="433.0" layoutY="238.0" onAction="#handleQuitAction" prefHeight="43.0" prefWidth="104.0" text="Quit" />
+      <Button fx:id="addButton" layoutX="40.0" layoutY="175.0" onAction="#changeSignLabel" prefHeight="43.0" prefWidth="69.0" text="+" />
+      <Button fx:id="subtractButton" layoutX="127.0" layoutY="175.0" onAction="#changeSignLabel" prefHeight="43.0" prefWidth="69.0" text="-" />
+      <Button fx:id="greaterThanButton" layoutX="298.0" layoutY="175.0" onAction="#changeSignLabel" prefHeight="43.0" prefWidth="69.0" text="&gt;" />
+      <Button fx:id="multButton" layoutX="212.0" layoutY="175.0" onAction="#changeSignLabel" prefHeight="43.0" prefWidth="69.0" text="*" />
+      <Button fx:id="lessThanButton" layoutX="382.0" layoutY="175.0" onAction="#changeSignLabel" prefHeight="43.0" prefWidth="69.0" text="&lt;" />
+      <Button fx:id="equalsButton" layoutX="468.0" layoutY="175.0" onAction="#changeSignLabel" prefHeight="43.0" prefWidth="69.0" text="==" />
+      <TextField fx:id="number1Txt" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="29.0" prefHeight="31.0" prefWidth="420.0" text="100" />
+      <TextField fx:id="number2Txt" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="73.0" prefHeight="31.0" prefWidth="420.0" text="20" />
+      <TextField fx:id="resultTxt" alignment="CENTER_RIGHT" editable="false" layoutX="99.0" layoutY="115.0" prefHeight="31.0" prefWidth="420.0" />
+      <Label layoutX="22.0" layoutY="34.0" text="Number 1:" />
+      <Label layoutX="22.0" layoutY="78.0" text="Number 2:" />
+      <Label layoutX="22.0" layoutY="120.0" text="Result:" />
+      <Label fx:id="signLabel" alignment="CENTER" layoutX="528.0" layoutY="29.0" prefHeight="90.0" prefWidth="90.0" text="+" textAlignment="JUSTIFY">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
